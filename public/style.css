@@ -92,6 +92,7 @@ footer a:hover {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 16px -8px rgba(1, 1, 1, .1);
+  position: relative;
 }
 .idea img {
   width: 80px;
@@ -185,6 +186,13 @@ form button {
 form button:hover {
   text-decoration: none;
   background: rgb(251, 251, 241);
+}
+a.delete {
+  font-size: .8em;
+  align-self: end;
+  position: absolute;
+  right: 15px;
+  top: 15px;
 }
 
 /*IDEA.HTML*/

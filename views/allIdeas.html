@@ -1,0 +1,24 @@
+{% for idea in ideas %}
+  <div class="idea">
+    {% if idea.image %}
+      <img src="{{idea.image}}" 
+        alt="imagem de {{idea.title}}">
+    {% else %}
+      <img src="https://image.flaticon.com/icons/svg/2836/2836571.svg" 
+        alt="imagem de {{idea.title}}">
+    {% endif %}
+
+    <div class="content">
+      <h3>{{idea.title}}</h3>
+      <a href="/ideias/delete/{{idea.id}}" class="delete">Apagar</a>
+      <p>{{idea.category}}</p>
+      <div class="description">
+        {{idea.description}}
+      </div>
+
+      {% if idea.link %}
+        <a href="{{idea.link}}" target="_blank">Ir para a ideia</a>
+      {% endif %}
+    </div>
+  </div>
+{%endfor%}

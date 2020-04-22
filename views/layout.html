@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  {%block titulo%}
+      <title>CasaCriativa</title>
+  {%endblock%}
+  {% include "headContent.html" %}
+</head>
+<body id="{{bodyId}}">
+  <div id="container">
+    {% block conteudo %}
+    {%endblock%}
+  </div>
+
+  <!-- Modal-->
+  {% include "modal.html" %}
+<script src="/scripts.js"></script>
+</body>
+</html>
